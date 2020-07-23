@@ -1,0 +1,5 @@
+{
+  "APP_NAME": "Shortener Url App",
+  "PORT": 5000,
+  "base_url": "http://localhost:5000"
+}
