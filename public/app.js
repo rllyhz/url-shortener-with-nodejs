@@ -18,7 +18,7 @@ document.querySelector('#copyBtn')
 window.addEventListener('keyup', event => {
   if (event.keyCode == 44) {
     console.log(event.keyCode)
-    updateClipboard()
+    // updateClipboard()
   }
 })
 

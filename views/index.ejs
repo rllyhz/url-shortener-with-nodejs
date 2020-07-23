@@ -12,7 +12,8 @@
   <h1>Shorten Your URL Here!</h1>
 
   <form action="http://localhost:5000/" method="post" class="form" role="form">
-    <input type="url" name="longUrl" id="longUrlText" placeholder="Place your Url here" required>
+    <input type="url" name="longUrl" id="longUrlText" placeholder="Place your Url here" <% if (url !== null) { %>
+      value="<%= url.longUrl %>" <% } %> required>
     <button type="submit" id="shortenBtn">Shorten</button>
   </form>
 
@@ -20,7 +21,7 @@
     <form class="form">
       <h3>Successfully shortened. Go Ahead!</h3>
       <input type="text" id="shortenedUrlText" <% if (url !== null) { %> value="<%= url.shortenedUrl %>" <% } %>
-        disabled readonly>
+        readonly>
       <button id="copyBtn">Copy</button>
     </form>
   </div>
